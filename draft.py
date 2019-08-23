@@ -6,7 +6,9 @@
 
 def f():
     try:
-        1/0
+        1 / 0
     except Exception as e:
         raise e
+
+
 f()
