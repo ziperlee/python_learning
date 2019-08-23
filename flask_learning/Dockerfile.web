@@ -1,0 +1,20 @@
+FROM dev/python:latest
+
+LABEL maintainer="liwei <839728919@qq.com>"
+
+COPY . .
+EXPOSE 5000
+
+CMD ["python", "_session.py"]
+
+# docker build -t asset/flask -f .config/docker/Dockerfile.flask .
+# docker run -d -p 9000:9000 --name asset_flask -v //e/code/python3/ths-asset:/var/www --link flask_redis_1:redis zmysql:db --network flask_default bridge asset/flask
+# docker run -d -p 9000:9000 --name asset_flask -v //e/code/python3/ths-asset:/var/www --link=zmysql:db --network=bridge --rm asset/flask
+# winpty docker exec -it asset_flask sh
+# REDIS_URL = 'redis://:@redis:6379/5'
+
+# docker build -t dev/web:latest -f ./Dockerfile-web .
+# docker run -d -p 9000:5000 --name dev-web dev/web:latest
+# docker exec -it asset-web sh
+
+# docker run -d -it -p 9000:9000 -v /home/asset/log:/home/asset/log -e ASSET_CONFIG='alpha' --name asset-web asset/web:latest sh

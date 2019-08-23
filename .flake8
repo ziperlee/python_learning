@@ -1,0 +1,8 @@
+[flake8]
+ignore =
+    E203 # whitespace before ':'
+    E741 # ambiguous variable name 'l'
+filename =
+exclude =
+max-line-length = 89
+max-complexity = 10

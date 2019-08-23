@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "*"
+attrs = "*"
+locust = "*"
+flask-socketio = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
+pymysql = "*"
+flask-session = "*"
+pytest = "*"
+tldr = "*"
+flask-caching = "*"
+redis = "*"
+pre-commit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
